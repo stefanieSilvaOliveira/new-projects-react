@@ -15,11 +15,15 @@
     "styled-components": "^6.1.6",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://stefaniesilvaoliveira.github.io/new-projects-react/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +45,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "gh-pages": "^6.1.1"
   }
+
 }
