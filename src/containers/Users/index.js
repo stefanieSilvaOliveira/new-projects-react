@@ -61,9 +61,7 @@ return (
         ))}    
     </ul>
     
-    <Button onClick={goBackPage}>Next</Button> 
-    
-    
+    <Button onClick={goBackPage}>Next</Button>    
 </ContainerItens>   
 </Container> 
 )};
@@ -71,6 +69,5 @@ return (
 {
 
 }
-
 
 export default Users;
