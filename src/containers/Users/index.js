@@ -66,8 +66,5 @@ return (
 </Container> 
 )};
 
-{
-
-}
 
 export default Users;
