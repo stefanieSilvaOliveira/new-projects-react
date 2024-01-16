@@ -1,7 +1,7 @@
 {
   "name": "first-projects-react",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://stefanieSilvaOliveira.github.io/new-projects-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
