@@ -25,6 +25,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanieSilvaOliveira/new-projects-react.git#gh-pages"
+  },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -51,3 +57,4 @@
     "gh-pages": "^6.1.1"
   }
 }
+
