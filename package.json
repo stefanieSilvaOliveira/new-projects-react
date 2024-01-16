@@ -15,7 +15,7 @@
     "styled-components": "^6.1.6",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://stefaniesilvaoliveira.github.io/new-projects-react/",
+  "homepage": "https://stefanieSilvaOliveira.github.io/new-projects-react/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
