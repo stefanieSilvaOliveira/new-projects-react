@@ -3,46 +3,38 @@ import React, {useState, useEffect} from "react";
 import {useHistory} from 'react-router-dom'
 
 import axios from 'axios';
-import { Container, H1,Image,ContainerItens,Button, User} from './style';
+import { Container, H1,Image,ContainerItens,User,Button} from './style';
 import Friends from '../../img/image-group-friends.png';
 import { TiTrash } from "react-icons/ti";
 
 
 function Users() {
     const [users, setUsers] = useState([]);
-    const history = useHistory()
-    
+    const history = useHistory();
 
 useEffect(() =>{
     
- async function fectUsers(){
+ async function fetchUsers(){
     const {data: newUsers} = await axios.get("http://localhost:3001/users");
 
     setUsers(newUsers);
-    }
+     }
 
-fectUsers()
+fetchUsers();
     
-}, [])
-
-function goBackPage(){
-    history.push("/")
-}
-
-// React Hook => useEffect (Efeito Colateral)
-// Quais são esses efeitos? Assim que a minha aplicação inicia o UseEffect é chamado. (Pagina carregou)
-// Quando um estado que está dentro do array de dependencia do UseEffect é alterado.
-
-
+}, []);
 
 async function deleteUser(userId) {
-    await axios.delete(`http://localhost:3001/users/${userId}`)
+    await axios.delete(`http://localhost:3001/users/${userId}`);
     
     const newUsers = users.filter((user) => user.id !== userId);
     
     setUsers(newUsers);
 }
 
+function goBackPage(){
+    history.push("/");
+}
 
 return (
     <Container>

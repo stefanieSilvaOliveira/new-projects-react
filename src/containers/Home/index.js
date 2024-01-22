@@ -1,5 +1,5 @@
 
-import React, {useState, useRef,} from 'react';
+import React, {useState, useRef} from 'react';
 import {useHistory} from "react-router-dom";
 
 import axios from 'axios';
@@ -21,14 +21,11 @@ async function addNewUser() {
     const { data: newUser } = await axios.post("http://localhost:3001/users", {
        name: inputName.current.value, 
        age:  inputAge.current.value,
-       });
-
-   console.log(newUser)        
+       });    
 
    setUsers([...users,newUser]);   
 
-   history.push("/usuarios")
-     
+   history.push('/usuarios');    
 }
 
 return (
@@ -38,7 +35,7 @@ return (
     <H1>Create your Registration</H1>
     
     <InputLabel>Name</InputLabel>
-    <Input ref={inputName} placeholder='Nome'></Input>
+    <Input ref={inputName} placeholder='Name'></Input>
     
     <InputLabel>Age</InputLabel>
     <Input ref={inputAge} placeholder='Age'></Input>

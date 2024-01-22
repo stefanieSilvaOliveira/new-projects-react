@@ -11,7 +11,7 @@ return (
 <Switch>
                 
 <Route exact path="/" component={Home}></Route>
-<Route exact path="/users" component={Users}></Route>
+<Route exact path="/usuarios" component={Users}></Route>
 
 </Switch>
 </Router>
